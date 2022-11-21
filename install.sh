@@ -21,3 +21,7 @@ git clone ${themes_repo} ${kitty_config_dir}/kitty-themes
 
 echo -e "${BLUE}create symlink to theme ${enabled_kitty_theme}${NC}"
 ln -sv ${kitty_config_dir}/kitty-themes/themes/${enabled_kitty_theme}.conf ${kitty_config_dir}/theme.conf
+
+echo -e "${BLUE}set TERM=xterm-256color in bashrc${NC}"
+echo "export TERM=xterm-256color" >>${HOME}/.bashrc
+
